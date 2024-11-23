@@ -3,12 +3,12 @@ import { IoIosContact } from "react-icons/io";
 const Testimonial = () => {
   return (
     <>
-      <section className="my-8 text-black">
+      <section className="my-8 bg-black">
         
-        <div className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10">
-          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
-            <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 ">
-              <p className="relative px-6 py-1 text-lg italic text-center ">
+        <div className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10 ">
+          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg border rounded-lg">
+            <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12  ">
+              <p className="relative px-6 py-1 text-lg italic text-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -43,7 +43,7 @@ const Testimonial = () => {
              
             </div>
           </div>
-          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
+          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg border rounded-lg">
             <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 ">
               <p className="relative px-6 py-1 text-lg italic text-center ">
                 <svg
@@ -80,7 +80,7 @@ const Testimonial = () => {
              
             </div>
           </div>
-          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
+          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg border rounded-lg ">
             <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 ">
               <p className="relative px-6 py-1 text-lg italic text-center ">
                 <svg
@@ -92,7 +92,7 @@ const Testimonial = () => {
                   <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                   <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
                 </svg>
-                I’m a huge cap collector, and this store has exceeded my expectations. Their variety is incredible, and the designs are super trendy. I’ll definitely be back for more!
+                I ordered a custom cap for my cricket team, and they exceeded all expectations! The embroidery is flawless, the delivery was impressively quick, Truly couldn’t have asked for more!
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"

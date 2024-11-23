@@ -10,7 +10,7 @@ const Banner = () => {
             "url(https://www.theupstudio.com/img/hatclub/the-up-studio-architects-designers-hat-club-soho-modular-retail-store-shop-nyc-large.jpg)",
         }}
       >
-        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-overlay bg-black bg-opacity-55"></div>
         <div className="hero-content text-white text-center">
           <div className="">
             <h1 className="mb-5 text-5xl font-bold">.....WELCOME TO..... <br/>OUR <br />CAP STORE</h1>

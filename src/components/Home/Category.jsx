@@ -22,7 +22,7 @@ const Category = () => {
           <SwiperSlide >
             <img src="https://media.takealot.com/covers_images/ad89221d89544d1084279b16f61a4f4a/s-pdpxl.file" alt="" />
             <div className=" text-center">
-            <h2 className="text-xs lg:text-3xl font-semibold mx-2 text-slate-950">
+            <h2 className="text-xs lg:text-3xl font-semibold mx-2 text-white">
               Nike
             </h2>
             </div>
@@ -30,7 +30,7 @@ const Category = () => {
           <SwiperSlide >
             <img src="https://media.takealot.com/covers_images/ad89221d89544d1084279b16f61a4f4a/s-pdpxl.file" alt="" />
             <div className=" text-center">
-            <h2 className="text-xs lg:text-3xl font-semibold mx-2 text-slate-950">
+            <h2 className="text-xs lg:text-3xl font-semibold mx-2 text-white">
               Nike
             </h2>
             </div>
@@ -38,7 +38,7 @@ const Category = () => {
           <SwiperSlide >
             <img src="https://media.takealot.com/covers_images/ad89221d89544d1084279b16f61a4f4a/s-pdpxl.file" alt="" />
             <div className=" text-center">
-            <h2 className="text-xs lg:text-3xl font-semibold mx-2 text-slate-950">
+            <h2 className="text-xs lg:text-3xl font-semibold mx-2 text-white">
               Nike
             </h2>
             </div>
@@ -46,7 +46,7 @@ const Category = () => {
           <SwiperSlide >
             <img src="https://media.takealot.com/covers_images/ad89221d89544d1084279b16f61a4f4a/s-pdpxl.file" alt="" />
             <div className=" text-center">
-            <h2 className="text-xs lg:text-3xl font-semibold mx-2 text-slate-950">
+            <h2 className="text-xs lg:text-3xl font-semibold mx-2 text-white">
               Nike
             </h2>
             </div>
@@ -54,7 +54,7 @@ const Category = () => {
           <SwiperSlide >
             <img src="https://media.takealot.com/covers_images/ad89221d89544d1084279b16f61a4f4a/s-pdpxl.file" alt="" />
             <div className=" text-center">
-            <h2 className="text-xs lg:text-3xl font-semibold mx-2 text-slate-950">
+            <h2 className="text-xs lg:text-3xl font-semibold mx-2 text-white">
               Nike
             </h2>
             </div>
@@ -62,7 +62,7 @@ const Category = () => {
           <SwiperSlide >
             <img src="https://media.takealot.com/covers_images/ad89221d89544d1084279b16f61a4f4a/s-pdpxl.file" alt="" />
             <div className=" text-center">
-            <h2 className="text-xs lg:text-3xl font-semibold mx-2 text-slate-950">
+            <h2 className="text-xs lg:text-3xl font-semibold mx-2 text-white">
               Nike
             </h2>
             </div>

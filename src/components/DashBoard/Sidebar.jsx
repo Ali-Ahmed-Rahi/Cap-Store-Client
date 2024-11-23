@@ -42,11 +42,11 @@ const Sidebar = () => {
       <div className=" border-r-2 bg-black min-h-screen h-full px-8 py-16 text-white">
         <h1 className="font-bold text-3xl mb-8 text-center">Cap Store</h1>
         <ul className="flex flex-col gap-2">
-          <li className="btn">
+          <li className="btn text-white">
             <AiOutlineHome />
             <NavLink to="/">Home</NavLink>
           </li>
-          <li className="btn">
+          <li className="btn text-white">
             <GrOverview />
             <NavLink to="/dashboard/overview">Overview</NavLink>
           </li>
@@ -55,7 +55,7 @@ const Sidebar = () => {
           {userData.role === "seller" &&
             sellerRoutes.map((route) => (
               <li key={route.id} className="btn ">
-                <NavLink className="flex gap-1" to={route.route}>
+                <NavLink className="flex gap-1 text-white" to={route.route}>
                   <>{route.icon}</>
                   <p>{route.title}</p>
                 </NavLink>
@@ -65,14 +65,14 @@ const Sidebar = () => {
           {userData.role === "buyer" &&
             buyerRoutes.map((route) => (
               <li key={route.id} className="btn ">
-                <NavLink className="flex gap-1" to={route.route}>
+                <NavLink className="flex gap-1 text-white" to={route.route}>
                   <>{route.icon}</>
                   <p>{route.title}</p>
                 </NavLink>
               </li>
             ))}
 
-          <li className="mx-auto btn" onClick={() => logOut()}>
+          <li className="mx-auto btn text-white bg-red-500" onClick={() => logOut()}>
             <BiLogOut />
             <NavLink>LogOut</NavLink>
           </li>

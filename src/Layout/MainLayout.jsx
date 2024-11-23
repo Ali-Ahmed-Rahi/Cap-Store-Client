@@ -5,7 +5,7 @@ import Footer from "../shered/Footer";
 const MainLayout = () => {
   return (
     <>
-      <div>
+      <div className="bg-black">
         <Navbar></Navbar>
         <div className="min-h-[calc(100vh-117px)] bg-black">
         <Outlet></Outlet>

@@ -20,8 +20,8 @@ const Login = () => {
      }
   return (
     <>
-      <div className="border py-36 bg-blue-500">
-        <div className="w-full max-w-md p-8 space-y-3 rounded-xl shadow-lg bg-blue-400 mx-auto  text-black">
+      <div className=" py-5 lg:py-36 bg-black">
+        <div className="border w-4/5 lg:w-full lg:max-w-md p-8 space-y-3 rounded-xl shadow-lg  mx-auto  text-white">
           <h1 className="text-2xl font-bold text-center">Login</h1>
           <form onSubmit={handleSubmit(onSubmit)} noValidate="" action="" className="space-y-6">
             {/* email */}
@@ -64,7 +64,7 @@ const Login = () => {
                 </a>
               </div>
             </div>
-            <button className="block w-full p-3 text-center  dark:text-gray-50 bg-primary rounded-lg">
+            <button className="block w-full p-3 text-center bg-green-500 dark:text-gray-50  rounded-lg">
               Login
             </button>
           </form>
@@ -77,7 +77,7 @@ const Login = () => {
           </div>
           <div className="flex justify-center space-x-4">
             {/* google Part */}
-            <button onClick={handleGoogle} aria-label="Log in with Google" className="p-3 rounded-sm">
+            <button onClick={handleGoogle} aria-label="Log in with Google" className="p-3 rounded-sm ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"

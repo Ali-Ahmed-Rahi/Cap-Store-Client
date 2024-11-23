@@ -15,7 +15,7 @@ const WishList = () => {
     const fetch = async () => {
       setLoading(true);
       await axios
-        .get(`https://cap-store-server.vercel.app/wishlist/${userData._id}`, {
+        .get(`https://cap-store-server.onrender.com/wishlist/${userData._id}`, {
           headers: {
             authorization: `Bearer ${token}`,
           },

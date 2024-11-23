@@ -9,7 +9,7 @@ const useUserData = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       const res = await axios.get(
-        `https://cap-store-server.vercel.app/user/${user.email}`
+        `https://cap-store-server.onrender.com/user/${user.email}`
       );
       setUserData(res.data);
     };

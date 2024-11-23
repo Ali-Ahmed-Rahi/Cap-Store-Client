@@ -11,7 +11,7 @@ const SearchBar = ({handleSearch}) => {
           name="search"
           id="" 
           placeholder="Search Products"
-          className="w-80 p-[11px] border border-black rounded-l-lg"
+          className="lg:w-80 p-[11px] border border-black rounded-l-lg"
           />
           <button className="btn rounded-l-none rounded-r-md btn-outline bg-slate-200"><IoSearchSharp size={20} /></button>
       </form>

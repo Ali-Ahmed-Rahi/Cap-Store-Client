@@ -8,7 +8,7 @@ const FeaturedProducts = () => {
   useEffect(() => {
     const fetch = async () => {
       axios
-        .get(`https://cap-store-server.vercel.app/all-products`)
+        .get(`https://cap-store-server.onrender.com/all-products`)
         .then((res) => {
           setProducts(
             Array.isArray(res.data) ? res.data : res.data.product || []
@@ -32,7 +32,7 @@ const FeaturedProducts = () => {
           ))}
         </div>
         <div className="mt-5 text-center">
-          <NavLink to="/product" className="btn w-72 btn-secondary">
+          <NavLink to="/product" className="btn lg:w-72 btn-secondary">
             Show More
           </NavLink>
         </div>

@@ -22,7 +22,7 @@ const Products = () => {
     const fetch = async () => {
       axios
         .get(
-          `https://cap-store-server.vercel.app/all-products?title=${search}&page${page}&limit=9&sort=${sort}&category=${category}&brand=${brand}`
+          `https://cap-store-server.onrender.com/all-products?title=${search}&page${page}&limit=9&sort=${sort}&category=${category}&brand=${brand}`
         )
         .then((res) => {
           setProducts(
@@ -71,7 +71,7 @@ const Products = () => {
     }
   };
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto ">
       <h2 className=" pt-5 text-2xl font-bold text-center">All Products</h2>
       {/* Search */}
       <div className="flex justify-center w-full mb-6 pt-5">
@@ -96,7 +96,9 @@ const Products = () => {
             <>
               {products.length === 0 ? (
                 <div className="w-full h-full flex items-center justify-center">
-                  <h1 className="text-4xl font-bold">No Products Found</h1>
+                  <h1 className="text-2xl lg:text-4xl font-bold">
+                    No Products Found
+                  </h1>
                 </div>
               ) : (
                 <div className="min-h-screen grid lg:grid-cols-3 gap-2">
@@ -108,7 +110,7 @@ const Products = () => {
             </>
           )}
           {/* pagination */}
-          <div className="join flex items-center justify-center mb-3 mt-3">
+          <div className="join flex  items-center justify-center mb-3 mt-3 ">
             <button
               onClick={() => handlePageChange(page - 1)}
               className="join-item btn"

@@ -24,7 +24,7 @@ const Register = () => {
     const userData = { email, role, status, wishlist };
     createUser(data.email, data.password).then(() => {
       axios
-        .post("https://cap-store-server.vercel.app/users", userData)
+        .post("https://cap-store-server.onrender.com/users", userData)
         .then((res) => {
           // console.log(res.data);
           if (res.data.insertedId) {
@@ -51,8 +51,8 @@ const Register = () => {
   };
   return (
     <>
-      <div className="border py-36 bg-blue-500">
-        <div className="w-full max-w-md p-8 space-y-3 rounded-xl shadow-lg bg-blue-400 mx-auto  text-black">
+      <div className="py-5 lg:py-36 bg-black">
+        <div className="border w-4/5 lg:w-full lg:max-w-md p-8 space-y-3 rounded-xl shadow-lg  mx-auto  text-white">
           <h1 className="text-2xl font-bold text-center">Register</h1>
           <form
             onSubmit={handleSubmit(onsubmit)}
@@ -144,16 +144,20 @@ const Register = () => {
               )}
             </div>
             {/* role */}
-            <div className="space-y-1 text-sm">
+            <div className="space-y-1 text-sm ">
               <label htmlFor="password" className="font-semibold">
                 Role
               </label>
               <select
-                className="select select-bordered w-full"
+                className="select select-bordered w-full "
                 {...register("role", { required: true })}
               >
-                <option value="buyer">Buyer</option>
-                <option value="seller">Seller</option>
+                <option className="text-white" value="buyer">
+                  Buyer
+                </option>
+                <option className="text-white" value="seller">
+                  Seller
+                </option>
               </select>
               {errors.role && (
                 <p className="text-red-500 text-sm font-bold">
@@ -162,7 +166,7 @@ const Register = () => {
               )}
             </div>
             {/*  */}
-            <button className="block w-full p-3 text-center  dark:text-gray-50 bg-primary rounded-lg">
+            <button className="block w-full p-3 text-center dark:text-gray-50 bg-green-500 rounded-lg">
               Register
             </button>
           </form>

@@ -17,11 +17,16 @@ const Register = () => {
 
   const onsubmit = (data) => {
     const email = data.email;
+    const password=data.password
+    const confirmPassword=data.confirmPassword
+    if (password !== confirmPassword) {
+      return
+    }
     const role = data.role;
     const status = role === "buyer" ? "approved" : "pending";
     const wishlist = [];
 
-    const userData = { email, role, status, wishlist };
+    const userData = { email, password, role, status, wishlist };
     createUser(data.email, data.password).then(() => {
       axios
         .post("https://cap-store-server.onrender.com/users", userData)
@@ -60,18 +65,6 @@ const Register = () => {
             action=""
             className="space-y-6"
           >
-            <div className="space-y-1 text-sm">
-              <label htmlFor="username" className="block font-semibold">
-                Username
-              </label>
-              <input
-                type="text"
-                name="username"
-                id="username"
-                placeholder="Username"
-                className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-default-600"
-              />
-            </div>
             {/* email section */}
             <div className="space-y-1 text-sm">
               <label htmlFor="email" className="block font-semibold">
@@ -91,6 +84,7 @@ const Register = () => {
                 </p>
               )}
             </div>
+            {/* password section */}
             <div className="space-y-1 text-sm">
               <label htmlFor="password" className="block font-semibold">
                 Password
@@ -103,19 +97,18 @@ const Register = () => {
                 className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-default-600"
                 {...register("password", {
                   required: true,
-                  minLength: 6,
+                  validate: {
+                    strongPassword: (value) =>
+                      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>]).{8,}$/.test(
+                        value
+                      ) ||
+                      "Password must include uppercase, lowercase, number, and special character!",
+                  },
                 })}
               />
-              {errors.password?.type === "required" && (
-                <p className="text-red-500 text-sm font-bold">
-                  Password Is Required
-                </p>
-              )}
-              {errors.password?.type === "minLength" && (
-                <p className="text-red-500 text-sm font-bold">
-                  Password Must Have At least 6 character
-                </p>
-              )}
+              {errors.password && (
+            <p className="text-red-500 text-sm">{errors.password.message}</p>
+          )}
             </div>
 
             <div className="space-y-1 text-sm">
@@ -138,10 +131,10 @@ const Register = () => {
                 })}
               />
               {errors.confirmPassword && (
-                <p className="text-red-500 text-sm font-bold">
-                  Both Password Must Match
-                </p>
-              )}
+            <p className="text-red-500 text-sm">
+              {errors.confirmPassword.message}
+            </p>
+          )}
             </div>
             {/* role */}
             <div className="space-y-1 text-sm ">

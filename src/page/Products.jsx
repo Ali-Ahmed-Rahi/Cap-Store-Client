@@ -22,7 +22,7 @@ const Products = () => {
     const fetch = async () => {
       axios
         .get(
-          `https://cap-store-server.onrender.com/all-products?title=${search}&page${page}&limit=9&sort=${sort}&category=${category}&brand=${brand}`
+          `https://cap-store-server.vercel.app/all-products?title=${search}&page${page}&limit=9&sort=${sort}&category=${category}&brand=${brand}`
         )
         .then((res) => {
           setProducts(

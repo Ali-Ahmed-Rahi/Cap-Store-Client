@@ -17,10 +17,10 @@ const Register = () => {
 
   const onsubmit = (data) => {
     const email = data.email;
-    const password=data.password
-    const confirmPassword=data.confirmPassword
+    const password = data.password;
+    const confirmPassword = data.confirmPassword;
     if (password !== confirmPassword) {
-      return
+      return;
     }
     const role = data.role;
     const status = role === "buyer" ? "approved" : "pending";
@@ -29,7 +29,7 @@ const Register = () => {
     const userData = { email, password, role, status, wishlist };
     createUser(data.email, data.password).then(() => {
       axios
-        .post("https://cap-store-server.onrender.com/users", userData)
+        .post("https://cap-store-server.vercel.app/users", userData)
         .then((res) => {
           // console.log(res.data);
           if (res.data.insertedId) {
@@ -107,8 +107,10 @@ const Register = () => {
                 })}
               />
               {errors.password && (
-            <p className="text-red-500 text-sm">{errors.password.message}</p>
-          )}
+                <p className="text-red-500 text-sm">
+                  {errors.password.message}
+                </p>
+              )}
             </div>
 
             <div className="space-y-1 text-sm">
@@ -131,10 +133,10 @@ const Register = () => {
                 })}
               />
               {errors.confirmPassword && (
-            <p className="text-red-500 text-sm">
-              {errors.confirmPassword.message}
-            </p>
-          )}
+                <p className="text-red-500 text-sm">
+                  {errors.confirmPassword.message}
+                </p>
+              )}
             </div>
             {/* role */}
             <div className="space-y-1 text-sm ">

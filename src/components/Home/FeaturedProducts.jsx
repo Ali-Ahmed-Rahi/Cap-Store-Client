@@ -8,7 +8,7 @@ const FeaturedProducts = () => {
   useEffect(() => {
     const fetch = async () => {
       axios
-        .get(`https://cap-store-server.onrender.com/all-products`)
+        .get(`https://cap-store-server.vercel.app/all-products`)
         .then((res) => {
           setProducts(
             Array.isArray(res.data) ? res.data : res.data.product || []

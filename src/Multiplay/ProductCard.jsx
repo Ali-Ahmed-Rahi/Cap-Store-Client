@@ -10,7 +10,7 @@ const ProductCard = ({ product, isWishlist, setLatestData }) => {
 
   const handleWishList = async () => {
     await axios
-      .patch("https://cap-store-server.onrender.com/wishlist/add", {
+      .patch("https://cap-store-server.vercel.app/wishlist/add", {
         userEmail,
         productId,
       })
@@ -30,7 +30,7 @@ const ProductCard = ({ product, isWishlist, setLatestData }) => {
   // data remove from wish list
   const handleDeleteWishList = async () => {
     await axios
-      .patch("https://cap-store-server.onrender.com/wishlist/remove", {
+      .patch("https://cap-store-server.vercel.app/wishlist/remove", {
         userEmail,
         productId,
       })

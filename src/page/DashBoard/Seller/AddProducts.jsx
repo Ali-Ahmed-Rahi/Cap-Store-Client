@@ -39,7 +39,7 @@ const AddProducts = () => {
     // console.log(token);
 
     axios
-      .post("https://cap-store-server.onrender.com/add-products", product, {
+      .post("https://cap-store-server.vercel.app/add-products", product, {
         headers: {
           authorization: `Bearer ${token}`,
         },

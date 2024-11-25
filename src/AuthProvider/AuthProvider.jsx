@@ -40,7 +40,7 @@ const AuthProvider = ({ children }) => {
       setUser(currentUser);
       if (currentUser) {
         axios
-          .post(`https://cap-store-server.onrender.com/authentication`, {
+          .post(`https://cap-store-server.vercel.app/authentication`, {
             email: currentUser.email,
           })
           .then((data) => {

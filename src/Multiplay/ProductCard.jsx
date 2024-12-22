@@ -6,7 +6,7 @@ const ProductCard = ({ product, isWishlist, setLatestData }) => {
   const userData = useUserData();
   const userEmail = userData.email;
   const productId = product._id;
-  
+
   // console.log(userEmail,productId);
 
   const handleWishList = async () => {

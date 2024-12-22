@@ -37,7 +37,6 @@ const AddProducts = () => {
 
     const token = localStorage.getItem("access-token");
     // console.log(token);
-
     axios
       .post("https://cap-store-server.vercel.app/add-products", product, {
         headers: {
@@ -57,6 +56,7 @@ const AddProducts = () => {
         }
       });
   };
+  
   return (
     <>
       <div>

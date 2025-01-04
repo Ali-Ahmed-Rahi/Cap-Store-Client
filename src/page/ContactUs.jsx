@@ -47,7 +47,7 @@ const ContactUs = () => {
                 </svg>
                 <span>contact@business.com</span>
               </p>
-            </div>
+            </div> 
           </div>
           <form
             noValidate=""

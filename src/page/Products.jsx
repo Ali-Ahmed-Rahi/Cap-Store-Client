@@ -32,7 +32,7 @@ const Products = () => {
             Array.isArray(res.data) ? res.data : res.data.brands || []
           );
           setUniqueCategory(
-            Array.isArray(res.data) ? res.data : res.data.categorys || []
+            Array.isArray(res.data) ? res.data : res.data.category || []
           );
 
           setTotalPages(Math.ceil(res.data.totalProducts / 9));
@@ -110,7 +110,7 @@ const Products = () => {
             </>
           )}
           {/* pagination */}
-          <div className="join flex  items-center justify-center mb-3 mt-3 ">
+          <div className="join flex  items-end justify-center mb-3 mt-3 ">
             <button
               onClick={() => handlePageChange(page - 1)}
               className="join-item btn"
@@ -118,7 +118,7 @@ const Products = () => {
             >
               «
             </button>
-            <p className="join-item btn">{page}</p>
+            <p className="join-item btn text-white">{page}</p>
             <button
               onClick={() => handlePageChange(page + 1)}
               className="join-item btn"

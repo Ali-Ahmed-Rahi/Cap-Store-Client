@@ -56,7 +56,7 @@ const ProductCard = ({ product, isWishlist, setLatestData }) => {
           <img
             src={product.image}
             alt="Product Image"
-            className="w-full h-64 object-cover rounded-t-lg"
+            className="w-full h-32 lg:h-64 object-cover rounded-t-lg"
           />
         </figure>
         <div className="p-4 uppercase">
@@ -66,7 +66,7 @@ const ProductCard = ({ product, isWishlist, setLatestData }) => {
           <h2 className="font-semibold mt-1">
             Price:<span className="text-red-500">${product.price}</span>
           </h2>
-          <p className="text-sm uppercase mt-1">
+          <p className="hidden lg:block text-sm uppercase mt-1">
             {product.description.length < 50
               ? `${product.description}`
               : `${product.description.slice(0, 50)}...`}

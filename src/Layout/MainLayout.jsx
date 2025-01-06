@@ -7,7 +7,7 @@ const MainLayout = () => {
     <>
       <div className="bg-black">
         <Navbar></Navbar>
-        <div className="min-h-[calc(100vh-117px)] bg-black">
+        <div className="min-h-[calc(100vh-117px)] bg-black pt-10 text-white">
         <Outlet></Outlet>
         </div>
         <Footer></Footer>

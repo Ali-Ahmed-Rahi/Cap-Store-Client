@@ -42,11 +42,11 @@ const Sidebar = () => {
       <div className=" border-r-2 bg-black min-h-screen h-full px-8 py-16 text-white">
         <h1 className="font-bold text-3xl mb-8 text-center">Cap Store</h1>
         <ul className="flex flex-col gap-2">
-          <li className="btn text-white">
+          <li className="btn text-white bg-black border-green-600 hover:bg-green-600 font-bold">
             <AiOutlineHome />
             <NavLink to="/">Home</NavLink>
           </li>
-          <li className="btn text-white">
+          <li className="btn text-white bg-black border-green-600 hover:bg-green-600 font-bold">
             <GrOverview />
             <NavLink to="/dashboard/overview">Overview</NavLink>
           </li>
@@ -54,7 +54,7 @@ const Sidebar = () => {
           {/*seller map  */}
           {userData.role === "seller" &&
             sellerRoutes.map((route) => (
-              <li key={route.id} className="btn ">
+              <li key={route.id} className="btn bg-black border-green-600 hover:bg-green-600 font-bold">
                 <NavLink className="flex gap-1 text-white" to={route.route}>
                   <>{route.icon}</>
                   <p>{route.title}</p>
@@ -64,7 +64,7 @@ const Sidebar = () => {
             {/* buyer map */}
           {userData.role === "buyer" &&
             buyerRoutes.map((route) => (
-              <li key={route.id} className="btn ">
+              <li key={route.id} className="btn bg-black border-green-600 hover:bg-green-600 font-bold">
                 <NavLink className="flex gap-1 text-white" to={route.route}>
                   <>{route.icon}</>
                   <p>{route.title}</p>
@@ -72,7 +72,7 @@ const Sidebar = () => {
               </li>
             ))}
 
-          <li className="mx-auto btn text-white bg-red-500" onClick={() => logOut()}>
+          <li className="mx-auto btn text-white border-red-500 bg-black hover:bg-red-600 font-bold" onClick={() => logOut()}>
             <BiLogOut />
             <NavLink>LogOut</NavLink>
           </li>

@@ -5,7 +5,7 @@ import Sidebar from "../components/DashBoard/Sidebar";
 const DashBoard = () => {
   return (
     <>
-      <div className="grid lg:grid-cols-12 bg-black">
+      <div className="grid lg:grid-cols-12 bg-black ">
         <div className="col-span-2">
           <Sidebar></Sidebar>
         </div>

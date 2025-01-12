@@ -7,7 +7,7 @@ const About = () => {
         </div>
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h4 className="text-orange-500 text-sm font-semibold uppercase">
+            <h4 className="text-green-600 text-sm font-semibold uppercase">
               How we started
             </h4>
             <h1 className="text-4xl font-bold text-white leading-snug mt-4">
@@ -37,14 +37,14 @@ const About = () => {
           </div>
         </div>
         <div className="flex-col md:flex-row lg:flex gap-6 mt-12 text-center justify-center ">
-          <div className="border  p-6 rounded-lg  lg:w-1/2 mb-3 lg:mb-0">
+          <div className="border border-green-700 hover:border-4 p-6 rounded-lg  lg:w-1/2 mb-3 lg:mb-0">
             <h2 className="text-2xl font-bold text-purple-600">20.0K</h2>
             <p className="text-white">Total Likes</p>
             <span className="text-sm text-white">
               15% more than last month
             </span>
           </div>
-          <div className="bg-black border p-6 rounded-lg shadow-md lg:w-1/2">
+          <div className="bg-black border border-green-700 hover:border-4  p-6 rounded-lg shadow-md lg:w-1/2">
             <h2 className="text-2xl font-bold text-pink-500">1.6M</h2>
             <p className="text-white">Page Views</p>
             <span className="text-sm text-white">

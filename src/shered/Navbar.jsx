@@ -70,7 +70,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className={`navbar fixed z-10 ${isLgDevice && isScrolled ? 'bg-black' : 'bg-black'} text-white`}>
+      <div className={`navbar fixed z-10 ${isLgDevice && isScrolled ? 'bg-black bg-opacity-55' : 'bg-black'} text-white`}>
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -94,7 +94,7 @@ const Navbar = () => {
             <div>
               <div className="dropdown dropdown-end">
                 <div className="flex">
-                  <div className="badge badge-secondary">+{userData?.wishlist?.length}</div>
+                  <div className="badge bg-green-600 text-white">+{userData?.wishlist?.length}</div>
                   <div tabIndex={0} role="button" className="text-4xl">
                     <IoIosContact />
                   </div>
@@ -102,12 +102,12 @@ const Navbar = () => {
                 <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-3 shadow">
                   <div className="flex flex-col gap-2">
                     <li>
-                      <NavLink to="/dashboard" className="btn">
+                      <NavLink to="/dashboard" className="btn bg-green-600 text-white hover:bg-green-400">
                         DashBoard
                       </NavLink>
                     </li>
                     <li>
-                      <button onClick={handleLogOut} className="btn btn-accent">
+                      <button onClick={handleLogOut} className="btn bg-red-600 hover:bg-red-500 text-white">
                         LogOut
                       </button>
                     </li>

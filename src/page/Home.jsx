@@ -33,7 +33,7 @@ const Home = () => {
         <div className="lg:w-4/5 mx-auto mt-12 mb-10 ">
           <ContactInfo></ContactInfo>
         </div>
-        <div className="lg:w-4/5 mx-auto pt-16 py-6">
+        <div className="lg:w-4/5 mx-auto pt-16 py-6 ">
           <h1 className="text-2xl lg:text-4xl font-bold text-center mb-10">
             Frequently Asked Question
           </h1>

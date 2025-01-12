@@ -12,7 +12,7 @@ const FilterBar = ({setBrand,setCategory,handleReset,uniqueBrand,uniqueCategory,
         </div> */}
         <div className="mt-8 flex flex-col gap-2 items-center">
           <div className="">
-            <select className="p-[11px] lg:max-w-md w-40 text-white border rounded-lg" onChange={(e)=>setBrand(e.target.value)}>
+            <select className="p-[11px] lg:max-w-md w-40 text-white border border-green-600 rounded-lg" onChange={(e)=>setBrand(e.target.value)}>
               <option value="">Brands</option>
               {
                 uniqueBrand.map((brand)=>
@@ -22,7 +22,7 @@ const FilterBar = ({setBrand,setCategory,handleReset,uniqueBrand,uniqueCategory,
             </select>
           </div>
           <div className="pt-3 ">
-            <select className="p-[11px] lg:max-w-md w-40 border text-white rounded-lg " onChange={(e)=>setCategory(e.target.value)}>
+            <select className="p-[11px] lg:max-w-md w-40 border border-green-600  text-white rounded-lg " onChange={(e)=>setCategory(e.target.value)}>
               <option value="">Category</option>
              {
               uniqueCategory.map((category)=>

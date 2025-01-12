@@ -74,7 +74,7 @@ const Products = () => {
     <div className="container mx-auto ">
       <h2 className=" pt-5 text-2xl font-bold text-center">All Products</h2>
       {/* Search */}
-      <div className="flex justify-center w-full mb-6 pt-5">
+      <div className="flex justify-center w-full mb-6 pt-5 ">
         <SearchBar handleSearch={handleSearch} />
       </div>
       {/* Content */}

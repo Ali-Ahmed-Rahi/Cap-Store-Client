@@ -11,7 +11,7 @@ const ContactInfo = () => {
           <p className="text-xs lg:text-sm  mb-6">
           We are here to assist you. Contact us today!
           </p>
-          <div className="flex  md:flex-row md:justify-between gap-6">
+          <div className="flex mt-16  md:flex-row md:justify-between gap-6">
             {/* Address Section */}
             <div className="flex flex-col items-center text-white ">
               {/* <img
@@ -20,10 +20,12 @@ const ContactInfo = () => {
                 className="w-10 mb-2 text-white"
               /> */}
               <div className="text-2xl lg:text-6xl">
-              <IoLocationOutline  />
+              <IoLocationOutline className="text-green-600" />
               </div>
-              <h3 className="text-xs lg:text-sm font-semibold mb-1">ADDRESS</h3>
-              <p className="text-xs lg:text-sm ">27 13 Lowe Haven</p>
+             <div className="mt-3">
+             <h3 className="text-xs lg:text-sm font-semibold mb-1">ADDRESS</h3>
+             <p className="text-xs lg:text-sm ">27 13 Lowe Haven</p>
+             </div>
             </div>
             {/* Phone Section */}
             <div className="flex flex-col items-center">
@@ -33,10 +35,12 @@ const ContactInfo = () => {
                 className="w-10 mb-2"
               /> */}
               <div className="text-2xl lg:text-6xl">
-              <LuPhone />
+              <LuPhone className="text-green-600" />
               </div>
+              <div className="mt-3">
               <h3 className="text-xs lg:text-sm font-semibold mb-1">PHONE</h3>
               <p className=" text-xs lg:text-sm ">111 343 43 43</p>
+              </div>
             </div>
             {/* Email Section */}
             <div className="flex flex-col items-center">
@@ -46,10 +50,12 @@ const ContactInfo = () => {
                 className="w-10 mb-2"
               /> */}
               <div className="text-2xl lg:text-6xl">
-              <BiMessage  />
+              <BiMessage className="text-green-600" />
               </div>
+              <div className="mt-3">
               <h3 className="text-xs lg:text-sm font-semibold mb-1">EMAIL</h3>
               <p className=" text-xs lg:text-sm ">business@info.com</p>
+              </div>
             </div>
           </div>
         </div>

@@ -56,7 +56,7 @@ const WishList = () => {
                   ))}
                 </div>
               ) : (
-                <div className="w-full h-full flex items-center justify-center">
+                <div className="w-full h-full flex pt-72 justify-center text-4xl font-bold text-white">
                   <h1>NO PRODUCTS</h1>
                 </div>
               )}

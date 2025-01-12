@@ -60,17 +60,13 @@ const ProductCard = ({ product, isWishlist, setLatestData }) => {
           />
         </figure>
         <div className="p-4 uppercase">
-          <h2 className="text-xl font-bold text-center">{product.title}</h2>
-          <h2 className="font-bold mt-1">Brand:{product.brand}</h2>
-          <h2 className="font-semibold mt-1">category:{product.category}</h2>
+          <h2 className="text-xl font-bold text-center"> {product.title}</h2>
+          <h2 className="font-bold mt-1">Brand: {product.brand}</h2>
+          <h2 className="font-semibold mt-1">category: {product.category}</h2>
           <h2 className="font-semibold mt-1">
-            Price:<span className="text-red-500">${product.price}</span>
+            Price:<span className="text-red-500"> ${product.price}</span>
           </h2>
-          <p className="hidden lg:block text-sm uppercase mt-1">
-            {product.description.length < 50
-              ? `${product.description}`
-              : `${product.description.slice(0, 50)}...`}
-          </p>
+          
           <div className="text-center mt-3">
             {isWishlist ? (
               <button
@@ -82,7 +78,7 @@ const ProductCard = ({ product, isWishlist, setLatestData }) => {
             ) : (
               <button
                 onClick={handleWishList}
-                className="btn bg-green-500 text-white font-bold w-full"
+                className="btn border-green-500 bg-black hover:bg-green-600 text-white font-bold w-full"
               >
                 WishList
               </button>

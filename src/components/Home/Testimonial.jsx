@@ -6,14 +6,14 @@ const Testimonial = () => {
       <section className="my-8 bg-black">
         
         <div className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10 ">
-          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg border rounded-lg">
+          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg border border-green-600 rounded-lg">
             <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12  ">
               <p className="relative px-6 py-1 text-lg italic text-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                   fill="currentColor"
-                  className="w-8 h-8 dark:text-default-600"
+                  className="w-8 h-8 dark:text-green-600"
                 >
                   <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                   <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
@@ -23,7 +23,7 @@ const Testimonial = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                   fill="currentColor"
-                  className="absolute right-0 w-8 h-8 dark:text-default-600"
+                  className="absolute right-0 w-8 h-8 dark:text-green-600"
                 >
                   <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
                   <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
@@ -43,14 +43,14 @@ const Testimonial = () => {
              
             </div>
           </div>
-          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg border rounded-lg">
+          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg border border-green-600 rounded-lg">
             <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 ">
               <p className="relative px-6 py-1 text-lg italic text-center ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                   fill="currentColor"
-                  className="w-8 h-8 dark:text-default-600"
+                  className="w-8 h-8 dark:text-green-600"
                 >
                   <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                   <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
@@ -60,7 +60,7 @@ const Testimonial = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                   fill="currentColor"
-                  className="absolute right-0 w-8 h-8 dark:text-default-600"
+                  className="absolute right-0 w-8 h-8 dark:text-green-600"
                 >
                   <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
                   <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
@@ -80,14 +80,14 @@ const Testimonial = () => {
              
             </div>
           </div>
-          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg border rounded-lg ">
+          <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg border border-green-600 rounded-lg ">
             <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 ">
               <p className="relative px-6 py-1 text-lg italic text-center ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                   fill="currentColor"
-                  className="w-8 h-8 dark:text-default-600"
+                  className="w-8 h-8 dark:text-green-600"
                 >
                   <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                   <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
@@ -97,7 +97,7 @@ const Testimonial = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                   fill="currentColor"
-                  className="absolute right-0 w-8 h-8 dark:text-default-600"
+                  className="absolute right-0 w-8 h-8 dark:text-green-600"
                 >
                   <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
                   <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>

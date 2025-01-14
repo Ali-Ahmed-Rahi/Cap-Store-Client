@@ -32,7 +32,7 @@ const Banner = () => {
 
       {/* Discount Badge Section */}
       <div
-        className="hidden lg:block  absolute top-24 right-3 lg:top-72 lg:right-64"
+        className="hidden lg:block  absolute top-24 right-3 lg:top-1/3 lg:right-80"
         data-aos="zoom-in"
       >
         <div className="bg-green-600 w-16 sm:w-36 md:w-40 lg:w-40 h-16 sm:h-36 md:h-40 lg:h-40 rounded-full flex items-center justify-center">

@@ -21,7 +21,7 @@ const Login = () => {
   return (
     <>
       <div className=" py-5 lg:py-36 bg-black">
-        <div className="border w-4/5 lg:w-full lg:max-w-md p-8 space-y-3 rounded-xl shadow-lg  mx-auto  text-white">
+        <div className="border border-green-600 w-4/5 lg:w-full lg:max-w-md p-8 space-y-3 rounded-xl shadow-lg  mx-auto  text-white">
           <h1 className="text-2xl font-bold text-center">Login</h1>
           <form onSubmit={handleSubmit(onSubmit)} noValidate="" action="" className="space-y-6">
             {/* email */}
@@ -106,7 +106,7 @@ const Login = () => {
             </button>
           </div>
           <p className="text-xs text-center sm:px-6 font-semibold">
-            Don't have an account?
+            Don&apos;t have an account?
             <Link
               to="/register"
               rel="noopener noreferrer"

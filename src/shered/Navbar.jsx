@@ -19,14 +19,14 @@ const Navbar = () => {
 
   const [isLgDevice, setIsLgDevice] = useState(false);
 
-  // Check screen size to apply the scroll effect only for large devices
+  
   useEffect(() => {
     const checkDeviceSize = () => {
-      setIsLgDevice(window.innerWidth >= 1024); // lg breakpoint in Tailwind is 1024px
+      setIsLgDevice(window.innerWidth >= 1024); 
     };
 
     window.addEventListener('resize', checkDeviceSize);
-    checkDeviceSize(); // Check size on initial load
+    checkDeviceSize(); 
 
     return () => {
       window.removeEventListener('resize', checkDeviceSize);
@@ -70,7 +70,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className={`navbar fixed z-10 ${isLgDevice && isScrolled ? 'bg-black bg-opacity-55' : 'bg-black'} text-white`}>
+      <div className={`navbar fixed z-10 ${isLgDevice && isScrolled ? 'bg-black ' : 'bg-black bg-opacity-95'} text-white`}>
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

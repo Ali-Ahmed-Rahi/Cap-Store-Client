@@ -9,10 +9,10 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="relative h-80 md:h-screen lg:h-screen overflow-hidden">
+    <div className="relative h-80 md:h-screen lg:h-screen overflow-hidden ">
       {/* Video Background */}
       <video
-        className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
+        className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2 "
         autoPlay
         muted
         loop

@@ -90,6 +90,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end gap-3">
+
           {user ? (
             <div>
               <div className="dropdown dropdown-end">
@@ -116,25 +117,23 @@ const Navbar = () => {
               </div>
             </div>
           ) : (
-            <div className="dropdown dropdown-end">
-              <div tabIndex={0} role="button" className="text-4xl animate-pulse">
-                <IoIosContact />
-              </div>
-              <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-3 shadow">
-                <div className="flex flex-col gap-3 p-4">
-                  <li>
+            
+              
+              
+                <div className="flex gap-3 p-4">
+                  <p>
                     <NavLink className="btn btn-secondary" to="/login">
                       <p>Login</p>
                     </NavLink>
-                  </li>
-                  <li>
+                  </p>
+                  <p>
                     <NavLink className="btn btn-primary" to="/register">
                       <p>Register</p>
                     </NavLink>
-                  </li>
+                  </p>
                 </div>
-              </ul>
-            </div>
+              
+            
           )}
         </div>
       </div>
